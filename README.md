@@ -12,16 +12,20 @@ ZRAM creates a **compressed block device in RAM** for swap, improving performanc
 ```bash
 sudo apt update
 sudo apt install zram-tools
-sudo nano /etc/default/zramswap
 ```
 # ZRAM Swap Configuration
+```bash
+sudo nano /etc/default/zramswap
+```
+```ini
 ALGO=zstd
 PERCENT=50
 PRIORITY=100
 ZRAM_STREAMS=4
-
+```
+```bash
 sudo systemctl restart zramswap
-
+```
 
 ## 🧠 Memory Optimization (`99-laptop-memory.conf`)
 
