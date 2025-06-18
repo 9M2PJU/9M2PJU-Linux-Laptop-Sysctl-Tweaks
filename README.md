@@ -109,9 +109,3 @@ sudo sysctl -w net.ipv4.tcp_congestion_control=bbr
 
 MIT — use freely and modify as needed.
 
-```
-
----
-
-Let me know if you'd like a matching `.conf` file structure for download (`sysctl.d/` folder), or want this converted to a **Gist** or **GitHub Action** for automated system tuning.
-```
