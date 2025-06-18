@@ -4,6 +4,24 @@
 Optimized `sysctl` configuration files for laptops using SSD, ZRAM, and WiFi connections. Tested on Debian-based systems with Intel Core i5 CPUs, 15 GiB RAM, and 200/100 Mbps network speed.
 
 ---
+## 📦 Install and Configure ZRAM Swap
+
+ZRAM creates a **compressed block device in RAM** for swap, improving performance and reducing SSD wear.
+
+### 🛠️ Install `zram-tools` (Debian/Ubuntu)
+```bash
+sudo apt update
+sudo apt install zram-tools
+sudo nano /etc/default/zramswap
+```
+# ZRAM Swap Configuration
+ALGO=zstd
+PERCENT=50
+PRIORITY=100
+ZRAM_STREAMS=4
+
+sudo systemctl restart zramswap
+
 
 ## 🧠 Memory Optimization (`99-laptop-memory.conf`)
 
