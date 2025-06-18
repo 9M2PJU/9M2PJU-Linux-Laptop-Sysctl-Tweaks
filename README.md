@@ -1,6 +1,4 @@
-### 📄 `README.md` — Linux Laptop Sysctl Optimizations
 
-````markdown
 # 🚀 Linux Laptop Sysctl Tweaks (Memory + Network)
 
 Optimized `sysctl` configuration files for laptops using SSD, ZRAM, and WiFi connections. Tested on Debian-based systems with Intel Core i5 CPUs, 15 GiB RAM, and 200/100 Mbps network speed.
